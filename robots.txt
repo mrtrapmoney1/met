@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /backups/
+
+# Sitemap location
+Sitemap: https://metrotv-audiotech.com/sitemap.xml
+
+# Crawl-delay (optional, only if needed)
+# Crawl-delay: 1

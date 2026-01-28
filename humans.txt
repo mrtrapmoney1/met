@@ -1,0 +1,10 @@
+/* TEAM */
+Business: Metro TV & Appliance
+Location: Lincoln, Nebraska
+Established: 1947
+
+/* SITE */
+Last update: 2026-01-28
+Standards: HTML5, CSS3, Tailwind CSS
+Components: Vanilla JavaScript
+Accessibility: WCAG 2.2 Level AA
