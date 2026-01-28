@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro TV & Appliance - Authorized Repair Since 1947</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Nebraska Red -->
+    <!-- Application Structure Plan: A multi-page website focused on building trust and educating users on the warranty service process. Index.html (Home) acts as a landing page, directing users to dedicated pages for Services, Brands, and About. The "Book Repair" functionality has been removed and replaced with a "Contact" page that clarifies the process for warranty vs. non-warranty (audio) service. -->
+    <!-- Visualization & Content Choices: Content is structured into standard HTML pages. Visualizations are HTML/Tailwind grids for services, brand logos, and testimonials. This structure is clear, easy to navigate, and optimized for SEO. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #fef2f2;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGlhbmNlJTIwcmVwYWlyfGVufDB8fDB8fHww&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-red-600 text-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">
+                Metro TV & Appliance
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="font-bold text-white">Home</a>
+                <a href="services.html" class="hover:text-red-300">Services</a>
+                <a href="brands.html" class="hover:text-red-300">Brands</a>
+                <a href="about.html" class="hover:text-red-300">About Us</a>
+                <a href="contact.html" class="hover:text-red-300">Contact Us</a>
+                <a href="tel:402-466-9090" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+                    Call (402) 466-9090
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <span class="text-3xl">&#9776;</span>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Nav -->
+        <div id="nav-content" class="hidden md:hidden flex-col space-y-2 px-6 pb-4">
+            <a href="index.html" class="block font-bold text-white">Home</a>
+            <a href="services.html" class="block hover:text-red-300">Services</a>
+            <a href="brands.html" class="block hover:text-red-300">Brands</a>
+            <a href="about.html" class="block hover:text-red-300">About Us</a>
+            <a href="contact.html" class="block hover:text-red-300">Contact Us</a>
+            <a href="tel:402-466-9090" class="block bg-red-600 hover:bg-red-700 text-white text-center font-semibold py-2 px-4 rounded-lg transition duration-200 mt-2">
+                Call (402) 466-9090
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-24 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-red-900">
+                    Lincoln's Factory-Authorized Repair Experts
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-800 mt-4 font-light">
+                    Serving Our Community Since 1947
+                </p>
+                <p class="text-lg text-gray-700 mt-6 max-w-2xl mx-auto">
+                    Expert, reliable repair for your home appliances, televisions, and high-fidelity audio systems. We are the trusted partner for Nebraska's biggest brands.
+                </p>
+                <a href="services.html" class="mt-10 inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-semibold py-4 px-10 rounded-lg shadow-lg transition duration-200">
+                    See Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl text-red-600 mb-2">&#128197;</span>
+                        <h3 class="text-xl font-bold text-red-900">Since 1947</h3>
+                        <p class="text-gray-600">Over 75 years of experience.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl text-red-600 mb-2">&#128229;</span>
+                        <h3 class="text-xl font-bold text-red-900">Factory-Authorized</h3>
+                        <p class="text-gray-600">Warranty-approved service.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl text-red-600 mb-2">&#128104;&#8205;&#128295;</span>
+                        <h3 class="text-xl font-bold text-red-900">Trained Techs</h3>
+                        <p class="text-gray-600">Exclusive diagnostic tools.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl text-red-600 mb-2">&#128205;</span>
+                        <h3 class="text-xl font-bold text-red-900">Local Service</h3>
+                        <p class="text-gray-600">Serving Lincoln, Omaha & area.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-red-900">What We Fix</h2>
+                    <p class="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
+                        Today's appliances are complex electronics. Our 1947 roots in TV and audio repair give us a unique advantage in diagnosing and fixing the advanced circuit boards and microprocessors in all your modern home equipment.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Appliance Repair -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <div class="text-5xl text-red-600 mb-4">&#128295;</div>
+                            <h3 class="text-2xl font-bold text-red-900 mb-4">Appliance Repair</h3>
+                            <p class="text-gray-700 mb-4">From smart fridges to high-efficiency washers, we are factory-authorized to repair the complex electronics inside.</p>
+                        </div>
+                    </div>
+                    <!-- Television Repair -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <div class="text-5xl text-red-600 mb-4">&#128250;</div>
+                            <h3 class="text-2xl font-bold text-red-900 mb-4">Television Repair</h3>
+                            <p class="text-gray-700 mb-4">This is where we started. We service all major brands, specializing in cost-effective internal electronic repairs.</p>
+                        </div>
+                    </div>
+                    <!-- Audio Repair -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <div class="text-5xl text-red-600 mb-4">&#128266;</div>
+                            <h3 class="text-2xl font-bold text-red-900 mb-4">High-Fidelity Audio</h3>
+                            <p class="text-gray-700 mb-4">Our passion for electronics extends to high-end audio. We service modern home theaters and cherish vintage gear.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="services.html" class="bg-red-600 hover:bg-red-700 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-200">
+                        Learn More About Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands We Service -->
+        <section id="brands" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-red-900">Factory-Authorized for Your Brand</h2>
+                    <p class="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
+                        As a factory-authorized partner, we have direct access to manufacturer parts, training, and diagnostic software.
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">Samsung</span>
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">LG</span>
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">Whirlpool</span>
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">GE Appliances</span>
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">Sony</span>
+                    <span class="bg-gray-100 text-gray-800 text-lg font-semibold py-3 px-6 rounded-lg shadow-sm">Electrolux</span>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="brands.html" class="bg-red-600 hover:bg-red-700 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-200">
+                        See All Brands
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-red-900">Hear From Your Neighbors</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <figure class="bg-white p-8 rounded-lg shadow-md">
+                        <blockquote class="text-gray-700 text-lg italic leading-relaxed">
+                            "Communication with Gail was excellent. Gary fixed our dryer that was overheating. Gary explained very well and was right on time. We were very pleased."
+                        </blockquote>
+                        <figcaption class="mt-4">
+                            <cite class="font-semibold text-red-900 not-italic">- Sue Savre</cite>
+                        </figcaption>
+                    </figure>
+                    <figure class="bg-white p-8 rounded-lg shadow-md">
+                        <blockquote class="text-gray-700 text-lg italic leading-relaxed">
+                            "Knowledgeable and friendly. Quick with the repair & left everything clean & looking great."
+                        </blockquote>
+                        <figcaption class="mt-4">
+                            <cite class="font-semibold text-red-900 not-italic">- Amber Scholl</cite>
+                        </figcaption>
+                    </figure>
+                    <figure class="bg-white p-8 rounded-lg shadow-md">
+                        <blockquote class="text-gray-700 text-lg italic leading-relaxed">
+                            "My washing machine was broken. When Gary, the competent technician who arrived on time, was all done, the 10 YO Maytag was working like new."
+                        </blockquote>
+                        <figcaption class="mt-4">
+                            <cite class="font-semibold text-red-900 not-italic">- Mark Prusa</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-red-200 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Metro TV & Appliance</h4>
+                    <p class="text-lg">Lincoln's Factory-Authorized Repair Experts Since 1947.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-lg">
+                        <li><span class="font-semibold text-white">Call:</span> <a href="tel:402-466-9090" class="hover:underline">(402) 466-9090</a></li>
+                        <li><span class="font-semibold text-white">Email:</span> <a href="mailto:service@metrotv-audiotech.com" class="hover:underline">service@metrotv-audiotech.com</a></li>
+                        <li><span class="font-semibold text-white">Visit:</span> 1107 North Cotner Blvd, Lincoln, NE 68505</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Hours</h4>
+                    <ul class="space-y-2 text-lg">
+                        <li><span class="font-semibold text-white">Monday-Friday:</span> 8:30 AM - 6:00 PM</li>
+                        <li><span class="font-semibold text-white">Saturday:</span> Closed</li>
+                        <li><span class="font-semibold text-white">Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-red-700 mt-12 pt-8 text-center text-red-300">
+                &copy; <span id="copyright-year"></span> Metro TV & Appliance. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.getElementById('nav-toggle');
+            const navContent = document.getElementById('nav-content');
+            
+            navToggle.addEventListener('click', () => {
+                navContent.classList.toggle('hidden');
+            });
+
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
